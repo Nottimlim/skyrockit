@@ -6,7 +6,7 @@ const applicationSchema = new mongoose.Schema({
     required: true,
   },
   title: {
-    type: String, 
+    type: String,
     required: true,
   },
   notes: {
@@ -17,9 +17,9 @@ const applicationSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    enum: ['interested', 'applied', 'interviewing', 'rejected', 'accepted']
-  }
-  });
+    enum: ['interested', 'applied', 'interviewing', 'rejected', 'accepted'],
+  },
+});
 
 const userSchema = mongoose.Schema({
   username: {
